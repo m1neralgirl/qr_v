@@ -1,0 +1,1 @@
+function modal_close(){$("#modalwindow").hide(),$("html").css("overflow-y","scroll"),$("html").css("height","auto"),void 0!==window.need_refresh&&window.need_refresh&&window.location.reload()}$(document).keyup((function(o){27===o.keyCode&&modal_close()})),$(document).click((function(){$(this).hasClass("w3-modal")&&$(this).hasClass("w3-modal-content")}));

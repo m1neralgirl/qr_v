@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <title>Личный кабинет qMS</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/w3custom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&amp;display=swap" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/custom.search.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/lk.js"></script>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/logo.png">
+    <link rel="apple-touch-icon-precomposed" href="images/logo.png">
+    <style>
+        @font-face {
+            font-family: 'FontAwesome';
+            src: url('index_1.html');
+            src: url('index_1.html#iefix&v=4.7.0') format('embedded-opentype'), url('index_1.html') format('woff2'), url('index_1.html') format('woff'), url('index_1.html') format('truetype'), url('index_1.html#fontawesomeregular') format('svg');
+            font-weight: normal;
+            font-style: normal
+        }
+
+        .button-capitalize-letter:hover {
+            background-color: #e9e9e9 !important;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    </head>
+
+<body class="w3-text-dark-gray w3-white">
+
+<form method="post" id="login_form" action="/login">
+    <div class="loader w3-text-cyan"></div>
+    <div class="login-main-container display-middle w3-white ">
+        <div class="w3-row w3-hide-large w3-center gradient-background w3-white">
+            <div class="login-mobile-logo w3-col s12">
+                <div class="login-logo-mobile-block">
+                    <img src="images/logo1.png" alt="Личный кабинет qMS">
+                </div>
+                                        <div class="language-block w3-center w3-margin-top" style="margin-top: 15px;margin-right: 15px;margin-left: 15px;">
+                            <label for="lang"><i class="fas fa-language"></i> Язык</label>
+                            <select name="lang" id="lang" onchange="window.location = 'change_global_lang/'+this.value;">
+                                                                    <option value="rus" selected="selected">RUS</option>
+                                                            </select>
+                        </div>
+                                </div>
+        </div>
+        <div class="w3-row gradient-background w3-white">
+            <div class="login-left-logo w3-hide-small w3-hide-medium w3-col">
+                <div class="login-logo-block">
+                    <img src="images/logo1.png" alt="Личный кабинет qMS">
+                </div>
+
+                                        <div class="language-block w3-center w3-margin-top" style="margin-top: 15px;margin-right: 15px;margin-left: 15px;">
+                            <label for="lang"><i class="fas fa-language"></i> Язык</label>
+                            <select name="lang" id="lang" onchange="window.location = 'change_global_lang/'+this.value;">
+                                                                    <option value="rus" selected="selected">RUS</option>
+                                                            </select>
+                        </div>
+                    
+            </div>
+            <div class="w3-rest w3-white">
+                <div class="login-right-block">
+                    <div class="login-centered-block">
+                        <div class="w3-xlarge w3-text-gray w3-padding-16 w3-block">
+                            Личный кабинет qMS                        </div>
+
+                                                    <div id="login-types" class="w3-center w3-block">
+                                
+                                                                        <a href="/login?auth=login" data-type="login" class="button-capitalize-letter w3-border-green w3-text-green w3-button w3-center-align w3-block w3-margin-bottom w3-padding-16">логин</a>
+                                                                            <a href="/login?auth=cheque" data-type="cheque" class="button-capitalize-letter w3-border-green w3-text-green w3-button w3-center-align w3-block w3-margin-bottom w3-padding-16">чек</a>
+                                    
+                                                                    <a href="/register" class="button-capitalize-letter w3-border-green w3-text-green w3-button w3-center-align w3-block w3-margin-bottom w3-padding-16">Регистрация пациента, смена пароля</a>
+                                
+                                
+                                
+                                
+
+                            </div>
+
+                        
+
+                        <div class="w3-center w3-small w3-opacity-max w3-margin-top">
+                            21.1.20                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <script>
+        $(document).ready(function () {
+            $('input[type="text"]:first').focus();
+            $('.phonemask').mask('+7 (000) 000-00-00');
+            $('.snilsmask').mask('000-000-000 00');
+            $('.datemask').mask('00.00.0000');
+        });
+    </script>
+</form>
+</body>
+</html> 
