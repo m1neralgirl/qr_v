@@ -60,11 +60,49 @@
 
             <p class="w3-block w3-padding-bottom">
                 <span class="w3-block w3-text-gray w3-padding-top">Дата забора биоматериала / Collection date</span>
-                02.01.22 10:09            </p>
+                
+                <script type="text/javascript">
+					function zero_first_format(value)
+					{
+						if (value < 10)
+						{
+							value='0'+value;
+						}
+						return value;
+					}
+					
+					var current_datetime = new Date();
+					var day = zero_first_format(current_datetime.getDate()-2);
+					var month = zero_first_format(current_datetime.getMonth()+1);
+					var year = current_datetime.getFullYear();
+
+					document.write(day+"."+month+"."+year);
+				</script>
+                
+                10:09            </p>
 
             <p class="w3-block w3-padding-bottom">
                 <span class="w3-block w3-text-gray w3-padding-top">Дата выполнения исследования / Test date</span>
-                03.01.22 16:44            </p>
+                
+                <script type="text/javascript">
+					function zero_first_format(value)
+					{
+						if (value < 10)
+						{
+							value='0'+value;
+						}
+						return value;
+					}
+					
+					var current_datetime = new Date();
+					var day = zero_first_format(current_datetime.getDate()-1);
+					var month = zero_first_format(current_datetime.getMonth()+1);
+					var year = current_datetime.getFullYear();
+
+					document.write(day+"."+month+"."+year);
+				</script>
+                
+                16:44            </p>
 
             <br>
 
